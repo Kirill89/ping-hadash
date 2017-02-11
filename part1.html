@@ -1,0 +1,25 @@
+<html>
+<head>
+	<title>Pong hadash</title>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			document.addEventListener('keydown', (event) => {
+				alert('(keydown) code is :' + event.keyCode);
+			});
+
+			document.addEventListener('keyup', (event) => {
+				alert('(keyup) code is :' + event.keyCode);
+			});
+		});
+	</script>
+</head>
+<body style="background: dimgray;">
+	<div id="stage" style="width: 600px; height: 340px; border: 2px solid white; position: relative; margin: 0 auto;">
+		<div id="score" style="text-align: center; font-size: 30px; color: white;">0&nbsp;&nbsp;0</div>
+		<div id="separator" style="width: 0px; border: 1px dashed white; height: 340px; position: absolute; top: 0px; left: 299px"></div>
+		<div id="player1" style="position: absolute; background: white; width: 20px; height: 90px; top: 0px; left: 20px;"></div>
+		<div id="ball" style="position: absolute; background: white; width: 20px; height: 20px; top: 20px; left: 40px; border-radius: 20px;"></div>
+		<div id="player2" style="position: absolute; background: white; width: 20px; height: 90px; top: 0px; right: 20px;"></div>
+	</div>
+</body>
+</html>
